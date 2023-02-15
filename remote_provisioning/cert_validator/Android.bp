@@ -8,7 +8,6 @@ rust_bindgen {
     wrapper_src: "libssl_wrapper.h",
     source_stem: "bindings",
     bindgen_flags: [
-        "--size_t-is-usize",
         "--allowlist-function", "BN_bin2bn",
         "--allowlist-function", "ECDSA_SIG_free",
         "--allowlist-function", "ECDSA_SIG_new",
